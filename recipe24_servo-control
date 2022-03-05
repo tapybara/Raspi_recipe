@@ -13,8 +13,8 @@ def main():
     factory = PiGPIOFactory()
     # min_pulse_width, max_pulse_width, frame_width =>SG90仕様
     servo = AngularServo(SERVO_PIN, min_angle=MIN_DEGREE, max_angle=MAX_DEGREE, 
-                         min_pulse_width=0.5/1000, max_pulse_width=2.4/1000, frame_width=1/50,
-                         pin_factory=factory)
+        min_pulse_width=0.5/1000, max_pulse_width=2.4/1000, frame_width=1/50,
+        pin_factory=factory)
 
     # SG90を -60度 <-> +60度で角度を変える
     try:
