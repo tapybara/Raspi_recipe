@@ -6,7 +6,7 @@ from time import sleep
 PIN_SR501 = 4
 
 "取得間隔"
-SAMPLING_TIME = 1.0
+SAMPLING_TIME = 0.5
 
 def main():
     factory = PiGPIOFactory()
